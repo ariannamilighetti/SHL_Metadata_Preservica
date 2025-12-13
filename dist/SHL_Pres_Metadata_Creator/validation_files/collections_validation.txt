@@ -1,0 +1,157 @@
+SHL - Agar Ellis Collection
+SHL - Alban Dobson Collection
+SHL - Alec Craig Collection
+SHL - Alfred Henry Littleton Library
+SHL - Allan Heywood Bright Collection
+SHL - Augustus De Morgan Collection
+SHL - Austin Dobson Library
+SHL - Bedford College Library
+SHL - Birkbeck College Library
+SHL - Bromhead Collection
+SHL - Bulmer-Thomas Library
+SHL - Carlton Shorthand Collection
+SHL - Caroline Playne Collection
+SHL - Chichester Cathedral Library
+SHL - Crofton Collection
+SHL - Cutbill Collection
+SHL - Douglas Foskett Collection
+SHL - Durning-Lawrence Library
+SHL - Edward Phelips
+SHL - Eggar Collection
+SHL - Elzevier Collection
+SHL - Émile Cammaerts Collection
+SHL - Ethel M. Wood Collection
+SHL - Falconer Madan Collection
+SHL - Family Welfare Association Library
+SHL - G.H. Wyatt Collection
+SHL - G.W. Prothero Library
+SHL - George Collection
+SHL - George Grote Library
+SHL - Goldsmith's Library
+SHL - Guildhall Library
+SHL - H.D. Lewis Collection
+SHL - Hampstead Public Libraries
+SHL - Harley Granville-Barker Collection
+SHL - Harry Price Library
+SHL - Heisler Collection
+SHL - Henry Trotter Library
+SHL - Institute of Germanic Studies
+SHL - Joan Gili Library
+SHL - John Burns Collection
+SHL - John Burns Collection
+SHL - Lady Welby Collection
+SHL - London Institution Collection
+SHL - M.S. Anderson Collection
+SHL - Mabel Irene Martin Collection
+SHL - Macmillan of Aberfeldy Library
+SHL - Malcolm Morley Collection
+SHL - Michael Slater Collection
+SHL - Mrs Humphry Ward Collection
+SHL - Patrick Lindley Collection
+SHL - Pelling Collection
+SHL - Porteus Collection
+SHL - Quick Memorial Library
+SHL - R.W. Bethlehem Collection
+SHL - Rare Books
+SHL - Reform Club Library
+SHL - Ron Heisler Collection
+SHL - Royal Society Collection
+SHL - Royal Statistical Society Library
+SHL - Sterling Library
+SHL - Stroud Read Library
+SHL - Thomas Sturge Moore Library
+SHL - Walter de la Mare Library
+SHL - Wellcome Historical Medical Library
+SHL - Yvonne Cory and of Emma Jane Robinson Collections
+UAM - AL194: William Paton Ker et al letters
+UAM - AL220: Richard Le Gallienne letter
+UAM - AL250: Richard Cobden letter
+UAM - AL258: Owen Williams correspondence
+UAM - AL340: John Urpeth Rastrick papers
+UAM - AL341: Gladys Ellen Easdale correspondence
+UAM - AL349: Quintin Hogg letter
+UAM - AL35: Richard Cobden letter
+UAM - AL367: David Cranstoun letters
+UAM - AL506: Robert Owen letter
+UAM - AL60: John Baker Holroyd (Earl of Sheffield) letters
+UAM - CAPHOTOS: Central America Photographic Collection
+UAM - Carlton: Carlton collection
+UAM - Closs: Closs/Priebsch family papers
+UAM - CUS: The Cusichaca Trust archive
+UAM - DLL: Lawrence, Sir, Edwin Durning- (1837-1914)
+UAM - FGU: Friedrich Gundolf papers
+UAM - Fuller: Fuller Collection
+UAM - HP: Harry Price archive
+UAM - ICS101: Castle Wemyss Estate Papers
+UAM - ICS117: Ruth First papers
+UAM - ICS120: Taylor family papers
+UAM - ICS158: Billy Strachan papers
+UAM - ICS167: Okoya inquest papers
+UAM - ICS56: Moyne papers on the West India Royal Commission
+UAM - ICS70: Sandbach Tinné & Co correspondence
+UAM - ICS92: Nigeria: Mid West Affairs: Oba of Benin
+UAM - MBE: Mary Beare papers
+UAM - MBH: Margarete Berger-Hamerschlag and Josef Berger papers
+UAM - Miller: Martin Miller and Hannah Norbert-Miller Archive
+UAM - MS1: Edward, Prince of Wales, the Black Prince by Chandos Herald
+UAM - MS1007: Grieve Family Collection of Theatre Designs
+UAM - MS1010: Jigsaw 'The Progress of Sugar Neatly Dissected'
+UAM - MS1015: Franz Bauer drawings
+UAM - MS1134: Barbados plantation legal papers
+UAM - MS1152: World War One Era Pamphlets
+UAM - MS1197: Joan Gili / Dolphin Book Company collection
+UAM - MS1210: Ron Heisler collection
+UAM - MS1217: Edgar Corrie letter and account
+UAM - MS1218: Sandbach Tinne and Co. correspondence
+UAM - MS1232: Edward Crawford papers
+UAM - MS1233: Herbert Gilchrist drawings of George Eliot's childhood home
+UAM - MS1290: Paul and Adelaide Joseph archive
+UAM - MS147: Hudson Bay Company
+UAM - MS151: Treatise on the creation of silver coinage
+UAM - MS231: Beneficent Society of Tinwald and Neighbourhood
+UAM - MS279: Memorandum by John Ashley
+UAM - MS325: John Urpeth Rastrick papers
+UAM - MS404: Memorial of Thomas Wroe
+UAM - MS454: Wells, Gilbert
+UAM - MS464: Bills of Lading
+UAM - MS468: Grain prices in Kingston upon Hull
+UAM - MS522: William Hewitt papers
+UAM - MS523: Newton family papers
+UAM - MS548: Silberman, Leo
+UAM - MS56: Far East trade papers
+UAM - MS584: Lawrence, Charles
+UAM - MS611: Memoranda on the price of wheat and flour
+UAM - MS628: Letter book of William Chalmers
+UAM - MS63: Company of Scotland Trading to Africa and the Indies (Darien Company)
+UAM - MS636: James Deacon Hume letters, drafts and notes
+UAM - MS675: Invoices relating to Philadelphia
+UAM - MS677: Sandbach, Tinné and Co., Liverpool
+UAM - MS746: English excise revenue, 1709-1785
+UAM - MS775: Morgan, Professor Augustus De
+UAM - MS782: Rabindranath Tagore papers
+UAM - MS791: Herbert Spencer papers
+UAM - MS797: Booth family papers
+UAM - MS800: Professor Émile Cammaerts papers
+UAM - MS804: Loyd family papers
+UAM - MS811: Lewin family papers
+UAM - MS817: Bromhead, Lt Col Alfred Claude
+UAM - MS865: De Cusance family papers
+UAM - MS883: Articles on tea and sugar
+UAM - MS912: Eric John Dingwall Papers
+UAM - MS913B: De Morgan family papers
+UAM - MS913I: De Morgan family papers
+UAM - MS915: Ternan Family Papers
+UAM - MS917: Samuel Wilderspin papers
+UAM - MS927: Roberts, David
+UAM - MS949: Opal Whiteley papers
+UAM - MS978: Thomas Sturge Moore Papers
+UAM - MS982: Florence Farr papers
+UAM - MS987: Katharine Emily Eggar papers
+UAM - MS99: Memoranda on colonial trade by merchant Joshua Gee
+UAM - MS996: Creswick, Thomas
+UAM - MS999: Akers Family Business Papers
+UAM - MYK: Margaret Mynatt and Yvonne Kapp Papers
+UAM - SLIV: Sterling Library Illustrated Manuscripts
+UAM - SLV: Sterling Library Manuscripts
+UAM - ULC: University of London Collection
+UAM - UoL: University of London Archive
