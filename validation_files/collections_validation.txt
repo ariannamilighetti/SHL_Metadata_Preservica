@@ -1,4 +1,3 @@
- 
 SHL - Agar Ellis Collection
 SHL - Alban Dobson Collection
 SHL - Alec Craig Collection
@@ -20,7 +19,7 @@ SHL - Durning-Lawrence Library
 SHL - Edward Phelips
 SHL - Eggar Collection
 SHL - Elzevier Collection
-SHL - Émile Cammaerts Collection
+SHL - Emile Cammaerts Collection
 SHL - Ethel M. Wood Collection
 SHL - Falconer Madan Collection
 SHL - Family Welfare Association Library
@@ -90,7 +89,7 @@ UAM - ICS120: Taylor family papers
 UAM - ICS158: Billy Strachan papers
 UAM - ICS167: Okoya inquest papers
 UAM - ICS56: Moyne papers on the West India Royal Commission
-UAM - ICS70: Sandbach Tinné & Co correspondence
+UAM - ICS70: Sandbach Tinne & Co correspondence
 UAM - ICS92: Nigeria: Mid West Affairs: Oba of Benin
 UAM - MBE: Mary Beare papers
 UAM - MBH: Margarete Berger-Hamerschlag and Josef Berger papers
@@ -128,13 +127,13 @@ UAM - MS628: Letter book of William Chalmers
 UAM - MS63: Company of Scotland Trading to Africa and the Indies (Darien Company)
 UAM - MS636: James Deacon Hume letters, drafts and notes
 UAM - MS675: Invoices relating to Philadelphia
-UAM - MS677: Sandbach, Tinné and Co., Liverpool
+UAM - MS677: Sandbach, Tinne and Co., Liverpool
 UAM - MS746: English excise revenue, 1709-1785
 UAM - MS775: Morgan, Professor Augustus De
 UAM - MS782: Rabindranath Tagore papers
 UAM - MS791: Herbert Spencer papers
 UAM - MS797: Booth family papers
-UAM - MS800: Professor Émile Cammaerts papers
+UAM - MS800: Professor Emile Cammaerts papers
 UAM - MS804: Loyd family papers
 UAM - MS811: Lewin family papers
 UAM - MS817: Bromhead, Lt Col Alfred Claude

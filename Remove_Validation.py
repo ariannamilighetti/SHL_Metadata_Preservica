@@ -1,13 +1,15 @@
 import tkinter as tk
 from tkinter import ttk
 
-class Remove_Validation(ttk.Frame):
+class RemoveValidation(ttk.Frame):
+    """A frame for removing values from validation files."""
     def __init__(self, metadata_visualiser):
         super().__init__()
         self.remove_command()
         self.metadata_visualiser = metadata_visualiser
 
     def get_file(self, list_option):
+        """Return the file path for the given validation list option."""
         if list_option == "Collections List":
             file = 'validation_files/collections_validation.txt'
         elif list_option == "Digitiser List":
@@ -22,27 +24,31 @@ class Remove_Validation(ttk.Frame):
             file = 'validation_files/restriction_validation.txt'
         else:
             file = 'validation_files/empty.txt'
-        
         return file
 
     def show_current_list(self, eventObject):
+        """Display the contents of the selected validation list in the listbox."""
         list_option = eventObject.widget.get()  
         file = self.get_file(list_option) 
         self.data = self.list_box_contents(file)
         self.fill_listbox(self.data, self.current_list)
         return file
-        
+ 
     def get_selection(self):
+        """Get the selected item from the listbox and populate the entry field."""
         index = self.current_list.curselection()
         self.selected_item = self.current_list.get(index)
         self.entry_to_delete.delete(0, 'end')
         self.entry_to_delete.insert(0, self.selected_item)
 
     def show_options(self):
+        """Display UI options for selecting and searching validation sets."""
         options_label = tk.Label(self, text="Select the validation set to update")
         options_label.grid(column=0, row = 3, sticky='ew', padx=5, pady=5)
         choose_validation= tk.StringVar()
-        options = ("Collections List", "Digitiser List", "Access List", "Copyright Status List", "Rights Statements List","Restrictions List")
+        options = ("Collections List", "Digitiser List",
+                    "Access List", "Copyright Status List", 
+                    "Rights Statements List","Restrictions List")
         self.drop_menu= ttk.Combobox(self, textvariable=choose_validation)
         self.drop_menu['values']= options
         self.drop_menu['state']= 'readonly'
@@ -58,18 +64,23 @@ class Remove_Validation(ttk.Frame):
         search.bind('<Return>', self.cb_search)
         
     def remove_command(self):
+        """Set up the UI for removing values from validation files."""
         self.show_options()
         delete_value_label = tk.Label(self, text="Value to remove")
         self.entry_to_delete = tk.Entry(self, width = 60)
-        get_selection_button = tk.Button(self,text="Get from box", width=25, command=self.get_selection, bg = '#c9b8d2')    
+        get_selection_button = tk.Button(self,text="Get from box", width=25, 
+                                         command=self.get_selection, bg = '#c9b8d2')
         delete_value_label.grid(column=0, row=7, sticky='e', padx=5, pady=5)
         self.entry_to_delete.grid(column=1, row=7, sticky= 'ew', padx=5, pady=5)
         get_selection_button.grid(column = 2, row = 7, sticky= 'ew', padx=5, pady=5)
-        value_updated_button = tk.Button(self,text="Delete from Validation",width=25,command=lambda: self.update_file(self.entry_to_delete.get()), background='#ff8962')  
+        value_updated_button = tk.Button(self,text="Delete from Validation",width=25,
+                                         command=lambda: self.update_file(self.entry_to_delete.get()),
+                                          background='#ff8962')
         value_updated_button.grid(column=2, row=8, sticky= 'ew', padx=5, pady=5)
 
 
     def update_file(self, todelete):
+        """Remove the specified value from the validation file."""
         selected_entry = self.drop_menu.get()
         file = self.get_file(selected_entry)
         filedata = []
@@ -79,42 +90,39 @@ class Remove_Validation(ttk.Frame):
                 continue
             else:
                 filedata.append(entry)
-            
-        file_w = open(file, 'w')
-        
-        for i in filedata:
-            file_w.write(i)
-        file_w.close()
+        with open(file, 'w', encoding='utf-8') as f:     
+            for i in filedata:
+                f.write(i)
+            f.close()
         self.success_label = tk.Label(self, text="Value Deleted")
         self.success_label.grid(column=2, row=9)
         self.metadata_visualiser.refresh()
         self.show_options()
 
     def cb_search(self, event):
+        """Filter the listbox contents based on the search string."""
         sstr = self.search_str.get()
         self.current_list.delete(0, 'end')
-
         # If filter removed show all data
         if sstr == "":
             self.fill_listbox(self.data, self.current_list)
             return
-    
         filtered_data = list()
         for item in self.data:
             if item.lower().find(sstr.lower())>= 0:
                 filtered_data.append(item)
-    
-        self.fill_listbox(filtered_data, self.current_list)   
+        self.fill_listbox(filtered_data, self.current_list)
 
     def fill_listbox(self, item_list, lb):
+        """Populate a listbox with items from the given list."""
         lb.delete(0,'end')
         for item in item_list:
             lb.insert('end', item)
 
     def list_box_contents(self, file):
+        """Read and return the contents of a validation file as a list."""
         data = []
-        f = open(file,"r")
-        for x in f:
-            data.append(x)
-        f.close()
+        with open(file, 'r', encoding='utf-8') as f:
+            for x in f:
+                data.append(x)
         return data

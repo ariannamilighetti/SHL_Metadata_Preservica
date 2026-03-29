@@ -1,8 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
-from Update_Validation import Update_Validation as UV
-from Add_Validation import Add_Validation as AV
-from Remove_Validation import Remove_Validation as RV
+from Update_Validation import UpdateValidation as UV
+from Add_Validation import AddValidation as AV
+from Remove_Validation import RemoveValidation as RV
+from Metadata_Visualiser import Metadata_Visualiser
 
 class Metadata_Changes(ttk.Frame):
     def __init__(self, metadata_visualiser):
@@ -45,7 +46,8 @@ def __main__():
     tabs = ttk.Notebook(app)
     tabs.grid(row=1, column= 0, sticky="nsew", padx=5, pady=5)
     # Create Tabs
-    data_input = Metadata_Changes()
+    metadata_visualiser = Metadata_Visualiser()
+    data_input = Metadata_Changes(metadata_visualiser)
     tabs.add(data_input, text='From Input')
     tk.mainloop()
 
