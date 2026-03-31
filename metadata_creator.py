@@ -1,10 +1,6 @@
 import os
 from datetime import datetime
 from lxml import etree
-from lxml.builder import ElementMaker
-from lxml.etree import Comment
-import tkinter as tk
-from tkinter import ttk
 
 def read_file(file):
     metadata_file = open(file, 'r', encoding='utf-8')
@@ -192,4 +188,4 @@ def create_metadata(folder, metadata, frame):
     return labels
 
 if __name__ == 'main':
-    create_metadata()
+    create_metadata(os.getcwd(), "a", "b")

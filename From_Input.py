@@ -2,15 +2,14 @@ import metadata_creator
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
-from Vertical_Scrolled_Farme import VerticalScrolledFrame
 
 
 class From_Input(ttk.Frame):
-    def __init__(self):
-        super().__init__()
-        self.scrollFrame = VerticalScrolledFrame(self)
+    def __init__(self, master):
+        super().__init__(master)
+        self.scrollFrame = tk.Frame(self)
         self.scrollFrame.pack(fill='both', anchor='center', expand=True)
-        self.selection_frm = ttk.LabelFrame(self.scrollFrame.viewPort, text="Items details")
+        self.selection_frm = ttk.LabelFrame(self.scrollFrame, text="Items details")
         self.selection_frm.pack(fill="x", padx=5, pady=5)
         self.row_count = 0
         
@@ -20,10 +19,10 @@ class From_Input(ttk.Frame):
         cat_number = self.input_fields('Catalogue Number') # Catalogue Number
         collection = self.dropdown_field('Collection', 'validation_files/collections_validation.txt') # Collection
         digitiser = self.dropdown_field('Digitiser', 'validation_files/digitiser_validation.txt') # Digitiser
-        digi_date = self.input_fields('Digitisation Date') # Digitisation Date
+        digi_date = self.input_fields('Digitisation Date, yyyy-mm-dd') # Digitisation Date
         acc_condition = self.dropdown_field('Access Conditions', 'validation_files/access_validation.txt') # Access Conditions
         restriction = self.dropdown_field('Restriction Reason', 'validation_files/restriction_validation.txt') # Restriction Reason
-        restriction_exp = self.input_fields('Restriction Expiry Date') # Restriction Exp Date
+        restriction_exp = self.input_fields('Restriction Expiry Date, yyyy-mm-dd') # Restriction Exp Date
         copyright = self.dropdown_field('Copyright Status', 'validation_files/copyright_status.txt') # Copyright Status
         r_statements = self.dropdown_field('Rights Statements', 'validation_files/rights_statements.txt') # Copyright Statement
         licence = self.input_fields('Licence Details') # Licence Details
@@ -36,7 +35,7 @@ class From_Input(ttk.Frame):
         self.selection_frm.columnconfigure(0, weight = 1)
         self.selection_frm.columnconfigure(1, weight = 0)
         self.selection_frm.columnconfigure(2, weight = 2)
-    
+
     def input_fields(self, title):
         label = tk.Label(master=self.selection_frm, text=title, anchor='nw')
         input = tk.Entry(master=self.selection_frm, width = 50)
@@ -44,10 +43,11 @@ class From_Input(ttk.Frame):
         input.grid(column=2, row=self.row_count, columnspan=3, sticky="nsew", padx=5, pady=5)
         self.row_count += 1
         return input
-    
+  
     def dropdown_field(self, title, file):
         label = tk.Label(master=self.selection_frm, text=title, anchor='nw')
-        entry = ttk.Combobox(master=self.selection_frm, state="readonly", width = 50, values = self.list_box_contents(file))
+        entry = ttk.Combobox(master=self.selection_frm, state="readonly",
+                             width = 50, values = self.list_box_contents(file))
         label.grid(column=0, row=self.row_count, columnspan=1, sticky="nsew", padx=5, pady=5)
         entry.grid(column=2, row=self.row_count, columnspan=3, sticky="nsew", padx=5, pady=5)
         self.row_count += 1
@@ -60,7 +60,7 @@ class From_Input(ttk.Frame):
             metadata_array.append(item.get())
         folder = self.folder_dir_label.get()
         row = 0
-        outcome_frame = tk.Frame(self.scrollFrame.viewPort)
+        outcome_frame = tk.Frame(self.scrollFrame)
         outcome_frame.pack(fill='both', expand=True)
         barcode_l = tk.Label(outcome_frame, text='Barcode')
         barcode_l.grid( row=row, column = 0, padx=8, pady=5)
@@ -114,9 +114,10 @@ class From_Input(ttk.Frame):
         end_directory = filedialog.askdirectory()
         self.folder_dir_label.delete(0, "end")
         self.folder_dir_label.insert(0, end_directory)
-    
+   
     def run_button(self):
-        run_button = tk.Button(self.scrollFrame.viewPort, text="Run", command=lambda: self.input_metadata(), bg='#7fd1ae')
+        run_button = tk.Button(self.scrollFrame, text="Run", command=
+                               lambda: self.input_metadata(), bg='#7fd1ae')
         run_button.pack(fill="x", padx=5, pady=5)
 
     def complete_label(self, label) :
@@ -130,7 +131,7 @@ def __main__():
     tabs = ttk.Notebook(app)
     tabs.grid(row=1, column= 0, sticky="nsew")
     # Create Tabs
-    data_input = From_Input()
+    data_input = From_Input(master=tabs)
     tabs.add(data_input, text='From Input')
     tk.mainloop()
 

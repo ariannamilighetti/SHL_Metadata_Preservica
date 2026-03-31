@@ -1,13 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
-from Update_Validation import UpdateValidation as UV
-from Add_Validation import AddValidation as AV
-from Remove_Validation import RemoveValidation as RV
-from Metadata_Visualiser import Metadata_Visualiser
+from Update_Validation import Update_Validation as UV
+from Add_Validation import Add_Validation as AV
+from Remove_Validation import Remove_Validation as RV
 
 class Metadata_Changes(ttk.Frame):
-    def __init__(self, metadata_visualiser):
-        super().__init__()
+    def __init__(self, metadata_visualiser, master):
+        super().__init__(master)
         self.instructions_label = 0
         self.table_titles_rows = 1
         self.search_button_row = 2
@@ -19,11 +18,11 @@ class Metadata_Changes(ttk.Frame):
         options = ttk.Notebook(self)
         options.grid(column=0, row=1, sticky='nw', padx=5, pady=5)
 
-        update = UV(metadata_visualiser)
+        update = UV(metadata_visualiser, master=self)
         options.add(update, text="Update Validation Value")
-        adder = AV(metadata_visualiser)
+        adder = AV(metadata_visualiser, master=self)
         options.add(adder, text='Add New Validation Option')
-        remover = RV(metadata_visualiser)
+        remover = RV(metadata_visualiser, master=self)
         options.add(remover, text='Remove A Value')
 
         self.grid_columnconfigure(0, weight=1)
@@ -46,8 +45,7 @@ def __main__():
     tabs = ttk.Notebook(app)
     tabs.grid(row=1, column= 0, sticky="nsew", padx=5, pady=5)
     # Create Tabs
-    metadata_visualiser = Metadata_Visualiser()
-    data_input = Metadata_Changes(metadata_visualiser)
+    data_input = Metadata_Changes()
     tabs.add(data_input, text='From Input')
     tk.mainloop()
 
